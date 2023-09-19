@@ -1,16 +1,19 @@
 # intent_launcher
 
-A new Flutter project.
+A simple app for launching Intents of any Android app that's browsable and has set `exported="true"` in it's manifest.
 
-## Getting Started
+Useful for pentesting apps.
 
-This project is a starting point for a Flutter application.
+## Run
 
-A few resources to get you started if this is your first Flutter project:
+`flutter run -d <YOU ANDROID DEVICE>`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Install
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You can find a release apk in the **releases** section
+
+---
+
+## Limitations
+
+I haven't yet found a way to bypass the Permission Denial exception that gets thrown when trying to launch a WebView within another app

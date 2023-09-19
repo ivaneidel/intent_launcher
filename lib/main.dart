@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       final intent = AndroidIntent(
         action: 'action_view',
-        // category: 'android.intent.category.BROWSABLE',
+        category: 'android.intent.category.BROWSABLE',
         data: _controller.text,
       );
       await intent.launch();
