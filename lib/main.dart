@@ -37,8 +37,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _controller =
-      TextEditingController(text: 'indriver://web?url=https://google.com');
+  final _controller = TextEditingController();
 
   void _launchIntent() async {
     try {
@@ -87,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 controller: _controller,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  hintText: 'Enter URL/data',
+                  hintText: 'https://example.com/',
                 ),
               ),
             ),
