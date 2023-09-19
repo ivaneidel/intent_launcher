@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.START_ANY_ACTIVITY" />
+
     <application
         android:label="intent_launcher"
         android:name="${applicationName}"
